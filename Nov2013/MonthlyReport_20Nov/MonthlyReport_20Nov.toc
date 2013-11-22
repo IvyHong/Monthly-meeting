@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Current Plan}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Radiation Background}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Position the collimator and detectors}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Progress against the plan}{3}{section.2}
+\contentsline {section}{\numberline {3}Achievements since last meeting}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Modeling Copy2}{4}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Composition Copy2}{4}{subsubsection.3.1.1}
+\contentsline {subsection}{\numberline {3.2}Modeling Copy3}{4}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Composition Cpoy3}{5}{subsubsection.3.2.1}
+\contentsline {section}{\numberline {4}Difficulties encounted since last meeting}{5}{section.4}
+\contentsline {section}{\numberline {5}Next steps}{5}{section.5}
+\contentsline {section}{\numberline {6}Actions}{5}{section.6}
+\contentsline {section}{\numberline {7}Revised plan}{5}{section.7}
