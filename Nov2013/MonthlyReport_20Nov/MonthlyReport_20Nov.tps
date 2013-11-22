@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=MonthlyReport_20Nov.tex
 
 [Frame0_View0,0]
-TopLine=165
-Cursor=6330
+TopLine=164
+Cursor=6319
 
 [SessionInfo]
 FrameCount=1
