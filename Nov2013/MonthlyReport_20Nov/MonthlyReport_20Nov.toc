@@ -1,11 +1,19 @@
 \contentsline {section}{\numberline {1}Project Background}{3}{section.1}
 \contentsline {section}{\numberline {2}Current Plan}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Position of collimator}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.1}Geometry of collimator}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Position of detectors}{3}{subsection.2.2}
 \contentsline {section}{\numberline {3}Progress against the plan}{4}{section.3}
 \contentsline {section}{\numberline {4}Achievements since last meeting}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}Git}{4}{subsection.4.1}
-\contentsline {section}{\numberline {5}Difficulties encounted since last meeting}{4}{section.5}
-\contentsline {section}{\numberline {6}Next steps}{5}{section.6}
-\contentsline {section}{\numberline {7}Actions}{5}{section.7}
-\contentsline {section}{\numberline {8}Revised plan}{5}{section.8}
+\contentsline {subsection}{\numberline {4.1}Getting Started - Git}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}G4 Learning}{5}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Geant4 Installation support}{5}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Latex}{5}{subsection.4.4}
+\contentsline {section}{\numberline {5}Difficulties encounted since last meeting}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}Problem.1}{5}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Problem.2}{6}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Problem.3}{6}{subsection.5.3}
+\contentsline {section}{\numberline {6}Next steps}{6}{section.6}
+\contentsline {subsection}{\numberline {6.1}Step.1}{6}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Step.2}{7}{subsection.6.2}
+\contentsline {section}{\numberline {7}Actions}{7}{section.7}
+\contentsline {section}{\numberline {8}Revised plan}{7}{section.8}

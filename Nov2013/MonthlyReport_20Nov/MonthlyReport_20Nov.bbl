@@ -45,4 +45,14 @@ A.V. Prokofiev, J.~Blomgren, M.~Majerle, R.~Nolte, S.~Rottger, S.P. Platt,
 \newblock In {\em Radiation Effects Data Workshop, 2009 IEEE}, pages 166--173,
   2009.
 
+\bibitem{gitManual}
+Scott Chacon.
+\newblock {\em Pro Git}.
+\newblock Git, 2009.
+
+\bibitem{geant4Manual}
+Geant4 Collaboration.
+\newblock {\em Geant4 User's Guide for Application Developers}, November 2012.
+\newblock version: geant4 9.6.0.
+
 \end{thebibliography}

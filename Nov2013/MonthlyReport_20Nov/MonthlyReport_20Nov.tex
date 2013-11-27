@@ -145,17 +145,17 @@ qhong@uclan.ac.uk
 
 \newpage
 \section{Project Background}
-Single event effect have an impact on electronic devices, especially applied in outer space, aircraft altitude and terrestrial environment. On the sea level, neutron as one of the factors induced single event effect has received attentions since Ziegler found soft fails in computer electronics \cite{5389432}. Testing single event effect on electronic devices under natural neutron fields not only expensive but also time consuming. Using accelerated neutron Single Event Effect (SEE) testing to explore SEE on electronic devices and system is a well established technique. As the basis of simulation, two test facilities have been used in the project, one is LANSCE ICE House and the other is The Svedberg Laboratory (TSL) \cite{5488795,5173383}.
+Single event effect have an impact on electronic devices, especially applied in outer space, aircraft altitude and terrestrial environment. On the sea level, neutron as one of the factors induced single event effect has received attentions since Ziegler found soft fails in computer electronics \cite{5389432}. Testing single event effect on electronic devices under natural neutron fields is not only expensive but also time consuming. Using accelerated neutron Single Event Effect (SEE) testing to explore SEE on electronic devices and system is a well established technique. As the basis of simulation, two test facilities have been considered as simulation model in the project, one is LANSCE ICE House and the other is The Svedberg Laboratory (TSL) \cite{5488795,5173383}.
 % Advantages of accelerated testing including: (1) Environment conditions can be controlled by human being. (2) We can choose the type and energy of the particle so that it is good for all respects of research on SEE. (3) The experiment is not only repeatable but also for a study with a single factor. It is important to explore the mechanism of single event effect.
 The silicon photodiodes have been applied in local beam monioring for accelerated neutron SEE testing is used to obtain a reliable estimation of neutron induced SEE cross-section \cite{6131336}. It has been found that there is a possibility of gamma rays deposited energy in the photodiodes \cite{ZhangThesis}. Monte Carlo simulation is good for quantitative analysis of physical and mathematical problems. The Geant4 software toolkit as a open source is developed for the passage of particles through the matter. 
 % The experiments can be carried out with several testing sets arraged along a beam line. In such case, devieces that are positioned further away from the beam source receive a degraded beam due to absorption and scattering by upstream experiments. The consequent loss of neutron fluence cannot be accounted for by typical upstream beam monitoring. In order to make reliable estimation of SEE cross-section. Local Beam Monitoring are necessary.
 
-My project is going to use Geant4 toolkit to simulate accelerated neutron SEE testing(LANSCE and TSL), calculate neutron and gamma flux at different positions along the beam line, and compare to existing data of neutron flux.
+My project is going to use Geant4 toolkit to simulate accelerated neutron SEE testing(LANSCE and TSL), calculate neutron and gamma flux at different positions along the beam line, and compare to existing database of neutron flux.
 
 \section{Current Plan}
 
-Compare LANSCE measurement results with Geant4 simulation results, it shows the simulated neutron flux is a little bit higher than measurement results below about 10{MeV}. Now it is planned to add collimator in the previous simulation and then compared with simulated results without adding collimator.
-  
+Compare LANSCE measurement results with Geant4 simulation results, it shows the simulated neutron flux is a little bit higher than measurement results below about 10{MeV}. Now it is planned to add collimator in the previous simulation and then compared with simulated results without adding collimator. ~\\
+
 Calculation of neutron flux by placing two more detectors in tandem. It is possible to calculate neutrons deposition parameters in collimator, for example, radiation leaking from the shielding. 
 
 \subsection{Geometry of collimator}
@@ -168,36 +168,74 @@ It shows positions of neutron source, detectors and collimator in accelerate SEE
 \end{figure*}
 
 \subsection{Position of detectors}
-In order to compare the neutron fluence results with and without adding collimator. Two more detectors will be attached along the incident direction of proton (+z) to calculate neutrons. They are located (0,0,867{mm}) , (0,0,collimatorLength + 867{mm}) and (0,0,2.5{m}) respectively to calculate neutrons before the neutron passing through the collimator, after the passage of neutron through the collimator. The third detector is placed in Standard User Position (it existed in the previous simulation, no collimator constructed)\{5336295}. The output file should contain more information, like detector ID.
+In order to compare the neutron fluence results with and without adding collimator. Two more detectors will be attached along the incident direction of proton (+z) to calculate neutrons. They are located (0,0,867{mm}) , (0,0,collimatorLength + 867{mm}) and (0,0,2.5{m}) respectively to calculate neutrons before the neutron passing through the collimator, after the passage of neutron through the collimator. The third detector is placed in Standard User Position (it existed in the previous simulation, no collimator constructed)\cite{5336295}. The output file should contain more information, like detector ID.
 % Downstream of production target Standard User Position
 
 \section{Progress against the plan}
 
-Construction of collimator does not go well. 
+Construction of collimator does not go well. Only neutron detectors are attached in the codes. Gamma detectors will be established in Geometry. ~\\
+
+Git is started to use in this project. It took time to learn how to use it. 
 
 \section{Achievements since last meeting}
 
-\subsection{Git}
-Git or ColudForge will be a good tool used as source manager to record and restore the project programming.
+\subsection{Getting Started - Git}
+Git is a good tool used as source manager to record changes and restore the project programming so that it is easy to recall any version at anytime anywhere. This version control system now is going to record any changes of this project. The git is used to store the snapshots for each time which is different from other competing product such as subversion. Commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory. Push, which takes the database from Git directory to another repository \cite{gitManual}. The following Figure\ref{fig:gitview} shows a Git on server.
+
+\begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
+\includegraphics[width=\linewidth]{Gitview}
+\caption{Git Repository}
+\label{fig:gitview}
+\end{figure*}
+
+% Version control. Git, every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
+% Git has three main states that your files can reside in: committed, modified, and staged. Committed means that the data is safely stored in your local database. Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot. This leads us to the three main sections of a Git project: the Git directory, the working directory, and the staging area.
+
 %\subsubsection{}
+\subsection{G4 Learning}
 
-\subsection{}
+The visualization can be controlled from both commands and compiled code. The commands are written in macro file withe using commands like /vis/open "visualization driver" and /vis/drawVolume. 
+% /vis/open creates a scene handler and viewer
+% create an empty scene
+% /vis/drawVolume add physical volume to the scene,default is world
+% Commands in the command directory "/vis/viewer/" set camera parameters and drawing style of the current
+Visualization Manager G4VVisManager, which as calling methods existing in G4UserRunAction and G4UserEventAction so that when Geant4 simulation is running, visualization can be implement with no user intervention .
+% G4VVisManager::Draw()
 
-%\subsubsection{}
+\subsection{Geant4 Installation support}
 
+New finding for Geant4, Geant4 is officially supported on Scientific Linux CERN 5 with gcc 4.1.2 or 4.3.X, 32/64bit and Scientific Linux CERN 6 with gcc 4.6.X, 64bit. This operating system has been installed, the following Figure\ref{fig:SL6view} shows interface. It is possible to try this system rather than one system. Now Geant4 source code has been installed in SL6 but lack of Integrated development environment. XCode and Eclipse are suggested in Geant4 installation manual and it is precious to try. 
+
+\begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
+\includegraphics[width=\linewidth]{SL6}
+\caption{Scientific Linux Operating system user interface}
+\label{fig:SL6view}
+\end{figure*}
+
+\subsection{Latex}
+Using text editor (TexnicCenter) to write monthly meeting report.
 
 \section{Difficulties encounted since last meeting}
-
-More detectors have been attached, no records from the output files. In order to check the programming, Debugger on Qt creator would be used, but it fails to debug. 
-The debugger installed on Linux operating system which is new to me. It need to take some time to learn how to debug on WildCat for this project.  
-
-Except for these, any source manager has not used in my PhD project. That will be a problem. No records for each modification. The program is unable to get back according to time. 
-
+\subsection{Problem.1}
+Two detectors have been attached, no records from the output files. In order to check the programming, Debugger of Qt creator would be used, but it fails to debug. The commands existing in macro file which are not compatible with the Qt creator debugger.
+\subsection{Problem.2}
+Except for these, any source manager has not used in this PhD project. That will be a problem. No records for each modification. The program is unable to get back according to time.
+\subsection{Problem.3}
 The geometry of collimator seems not correct from visualization interface window. The hole does not penetrate the collimator.
 
 \section{Next steps}
+\subsection{Step.1}
+Collimator geometry needs to be checked through minimal working example method. It is capable of creating a small project which used to check geometry. ~\\
+
+After examination, if the problem can be sorted it out, the progress will follow the plan step by step.  
+If the examination result is not ideal, it should be read Geant4 user manual and ask Supervisor for help \cite{geant4Manual}. 
+
+\subsection{Step.2}
+Doing research to find out Xcode and Eclipse in Linux and install on scientific Linux 6. If it works well, I would be familiar with using Geant4 in different system. 
 
 \section{Actions}
+
+Further aim is to submit a paper.
 
 \section{Revised plan}
 

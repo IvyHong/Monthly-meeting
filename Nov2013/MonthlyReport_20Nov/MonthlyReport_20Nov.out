@@ -1,11 +1,19 @@
 \BOOKMARK [1][-]{section.1}{Project Background}{}% 1
 \BOOKMARK [1][-]{section.2}{Current Plan}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Position of collimator}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Geometry of collimator}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Position of detectors}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{Progress against the plan}{}% 5
 \BOOKMARK [1][-]{section.4}{Achievements since last meeting}{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{Git}{section.4}% 7
-\BOOKMARK [1][-]{section.5}{Difficulties encounted since last meeting}{}% 8
-\BOOKMARK [1][-]{section.6}{Next steps}{}% 9
-\BOOKMARK [1][-]{section.7}{Actions}{}% 10
-\BOOKMARK [1][-]{section.8}{Revised plan}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Getting Started - Git}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{G4 Learning}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Geant4 Installation support}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Latex}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Difficulties encounted since last meeting}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Problem.1}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Problem.2}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{Problem.3}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Next steps}{}% 15
+\BOOKMARK [2][-]{subsection.6.1}{Step.1}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.2}{Step.2}{section.6}% 17
+\BOOKMARK [1][-]{section.7}{Actions}{}% 18
+\BOOKMARK [1][-]{section.8}{Revised plan}{}% 19
