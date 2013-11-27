@@ -154,9 +154,34 @@ My project is going to use Geant4 toolkit to simulate accelerated neutron SEE te
 
 \section{Current Plan}
 
-Compare LANSCE measurement results with Geant4 simulation results, it shows the simulated neutron flux is a little bit higher than measurement results below about 10{MeV}. Now it is planned to add collimator in the previous simulation and then compared with simulated results without adding collimator. ~\\
+Compare LANSCE measurement results with Geant4 simulation results, it shows the simulated neutron flux is a little bit higher than measurement results below about 10{MeV}. It is considered to attach collimator to take a look.
 
-Calculation of neutron flux by placing two more detectors in tandem. It is possible to calculate neutrons deposition parameters in collimator, for example, radiation leaking from the shielding. 
+\subsection{LANSCE results comparison}
+Comparison of neutron flux of LANSCE measurement results and Geant4 simulation results at 30 degree with collimator attached. 
+Comparison of neutron flux of LANSCE calculation results and Geant4 simulation results at 30 degree with collimator attached. 
+
+\subsection{ANITA results comparison}
+Comparison of neutron flux of analytical ANITA results and Geant4 simulation results at 0 degree with collimator attached. 
+
+\subsection{Simulation results comparison}
+Comparison neutron flux  of Geant4 simulation results at 0 (or 15, 30, 60 90) degree  without collimator attached and with collimator attached under Bertini Model.
+
+Comparison neutron flux  of Geant4 simulation results at 0 (or 15, 30, 60 90) degree  without collimator attached and with collimator attached under Binary Model.
+
+Comparison gamma flux  of Geant4 simulation results at 0 (or 15, 30, 60 90) degree  without collimator attached and with collimator attached under Bertini Model.
+
+Comparison gamma flux  of Geant4 simulation results at 0 (or 15, 30, 60 90) degree  without collimator attached and with collimator attached under Binary Model.
+
+
+To implement these plans, it needs to construct the collimator in the geometry and place two more detectors in tandem of the collimator. Then it is possible to calculate neutron (gamma) deposition parameters in collimator, for example, neutron (gamma) fluence. 
+
+\section{Progress against the plan}
+
+Construction of collimator does not go well. Only neutron detectors are attached in the codes. Gamma detectors will be established in Geometry. 
+
+No source management for this project, no records for the changes in each time. 
+
+\section{Achievements since last meeting}
 
 \subsection{Geometry of collimator}
 It shows positions of neutron source, detectors and collimator in accelerate SEE testing at The Svedberg Laboratory (TSL) \cite{5336295}. This collimator is made up steel cuboid with a hole of 102{mm} in diameter. Reference to Figure \ref{fig:view}. As it shows, some of neutrons could pass through the middle of the hole, some would go back and some have been stopped by collimator. 
@@ -170,14 +195,6 @@ It shows positions of neutron source, detectors and collimator in accelerate SEE
 \subsection{Position of detectors}
 In order to compare the neutron fluence results with and without adding collimator. Two more detectors will be attached along the incident direction of proton (+z) to calculate neutrons. They are located (0,0,867{mm}) , (0,0,collimatorLength + 867{mm}) and (0,0,2.5{m}) respectively to calculate neutrons before the neutron passing through the collimator, after the passage of neutron through the collimator. The third detector is placed in Standard User Position (it existed in the previous simulation, no collimator constructed)\cite{5336295}. The output file should contain more information, like detector ID.
 % Downstream of production target Standard User Position
-
-\section{Progress against the plan}
-
-Construction of collimator does not go well. Only neutron detectors are attached in the codes. Gamma detectors will be established in Geometry. ~\\
-
-Git is started to use in this project. It took time to learn how to use it. 
-
-\section{Achievements since last meeting}
 
 \subsection{Getting Started - Git}
 Git is a good tool used as source manager to record changes and restore the project programming so that it is easy to recall any version at anytime anywhere. This version control system now is going to record any changes of this project. The git is used to store the snapshots for each time which is different from other competing product such as subversion. Commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory. Push, which takes the database from Git directory to another repository \cite{gitManual}. The following Figure\ref{fig:gitview} shows a Git on server.
