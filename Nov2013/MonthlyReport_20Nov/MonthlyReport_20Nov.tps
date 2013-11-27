@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=886
-NormalPos.bottom=475
+NormalPos.right=1128
+NormalPos.bottom=431
 Class=LaTeXView
 Document=MonthlyReport_20Nov.tex
 
 [Frame0_View0,0]
-TopLine=243
-Cursor=9988
+TopLine=196
+Cursor=9467
 
 [SessionInfo]
 FrameCount=1

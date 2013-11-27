@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.20)  27 NOV 2013 02:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.20)  27 NOV 2013 07:05
 entering extended mode
 **MonthlyReport_20Nov.tex
 (E:\PhD\MonthlyMeeting\Nov2013\MonthlyReport_20Nov\MonthlyReport_20Nov.tex
@@ -431,8 +431,8 @@ Package rerunfilecheck Info: File `MonthlyReport_20Nov.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
  ) 
 Here is how much of TeX's memory you used:
- 7041 strings out of 493921
- 107532 string characters out of 3147281
+ 7039 strings out of 493921
+ 107494 string characters out of 3147281
  214639 words of memory out of 3000000
  10212 multiletter control sequences out of 15000+200000
  48600 words of font info for 52 fonts, out of 3000000 for 9000
@@ -441,9 +441,9 @@ Here is how much of TeX's memory you used:
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
 b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MonthlyReport_20Nov.pdf (5 pages, 653933 bytes).
+Output written on MonthlyReport_20Nov.pdf (5 pages, 653682 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
+ 123 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
  94 words of extra memory for PDF output out of 10000 (max. 10000000)
 
