@@ -113,15 +113,15 @@
 
 \vspace{2cm}
 
-{\Large\bf\sf Q. Hong}%as this is an english text I didn't load the german package, this would ease the use of special characters
+{\Large\bf\sf Hong, Q.}%as this is an english text I didn't load the german package, this would ease the use of special characters
 \vspace{2cm}
 
 {\Large\bf\sf Supervisor Team : }
 \vspace{2cm}
 
-{\Large\bf\sf                  S. P.Platt}
+{\Large\bf\sf                   Platt, S.P. ~\\}
 \vspace{2cm}
-{\Large\bf\sf                   S. J.Mein}
+{\Large\bf\sf                   Mein, S.J.}
 \vspace{2cm}
 
 {\Large\bf\sf \today} %adds the current date
@@ -144,93 +144,57 @@ qhong@uclan.ac.uk
 \tableofcontents
 
 \newpage
+\section{Project Background}
+Single event effect have an impact on electronic devices, especially applied in outer space, aircraft altitude and terrestrial environment. On the sea level, neutron as one of the factors induced single event effect has received attentions since Ziegler found soft fails in computer electronics \cite{5389432}. Testing single event effect on electronic devices under natural neutron fields not only expensive but also time consuming. Using accelerated neutron Single Event Effect (SEE) testing to explore SEE on electronic devices and system is a well established technique. As the basis of simulation, two test facilities have been used in the project, one is LANSCE ICE House and the other is The Svedberg Laboratory (TSL) \cite{5488795,5173383}.
+% Advantages of accelerated testing including: (1) Environment conditions can be controlled by human being. (2) We can choose the type and energy of the particle so that it is good for all respects of research on SEE. (3) The experiment is not only repeatable but also for a study with a single factor. It is important to explore the mechanism of single event effect.
+The silicon photodiodes have been applied in local beam monioring for accelerated neutron SEE testing is used to obtain a reliable estimation of neutron induced SEE cross-section \cite{6131336}. It has been found that there is a possibility of gamma rays deposited energy in the photodiodes \cite{ZhangThesis}. Monte Carlo simulation is good for quantitative analysis of physical and mathematical problems. The Geant4 software toolkit as a open source is developed for the passage of particles through the matter. 
+% The experiments can be carried out with several testing sets arraged along a beam line. In such case, devieces that are positioned further away from the beam source receive a degraded beam due to absorption and scattering by upstream experiments. The consequent loss of neutron fluence cannot be accounted for by typical upstream beam monitoring. In order to make reliable estimation of SEE cross-section. Local Beam Monitoring are necessary.
+
+My project is going to use Geant4 toolkit to simulate accelerated neutron SEE testing(LANSCE and TSL), calculate neutron and gamma fluence at different positions along the beam line, and compare to existing data of neutron flux.
 
 \section{Current Plan}
 
+Compare LANSCE measurement results with Geant4 simulation results, it shows the simulated neutron flux is a little bit higher than measurement results below about 10{MeV}. Now it is planned to add collimator in the simulation and then compared with simulated results without adding collimator.
+  
 Background Radiation, Information about the neutron and gamma background-spectrum fluence rate
-Calculate it by placing a Geant detector directly against the collimator(shielding).
-Calculating radiation leaking from the Shielding.
+Calculate neutron fluence by placing two more detectors in tandem. It is possible to calculate neutrons deposition parameters in collimator, for example, radiation leaking from the shielding. 
 
-Take care that results,and conclusions based on those results, account for the limitations of model. Make sure that understand the model limitations and significance.
- 
-\subsection{Radiation Background}
-Single event effect have an impact on electronic devices, especially applied in outer space, aircraft altitude and high altitude areas. On the sea level, neutron as one of the factors induced single event effect has received attentions since (zigler). 
+\subsection{Position of collimator}
+It shows positions of neutron source, detectors and collimator in accelerate SEE testing at The Svedberg Laboratory (TSL) \cite{5336295}. This collimator is made up steel cuboid with a hole of 102{mm} in diameter. Reference to Figure \ref{fig:view}
 
- 
-\subsection{Position the collimator and detectors}
-According to papar, it shows a user standard position of detectors and collimator.
+\begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
+\includegraphics[width=\linewidth]{Geometry}
+\caption{Geometry with collimator append}
+\label{fig:view}
+\end{figure*}
 
+\subsection{Position of detectors}
+In order to compare the neutron fluence results with and without adding collimator. Three detectors will be attached along the incident direction of proton (+z) to calculate neutrons. They are located (0,0,867{mm}) , (0,0,collimatorLength + 867{mm}) and (0,0,2.5{m}) respectively to calculate neutrons before the passage of neutron through the collimator, after the passage of neutron through the collimator and Standard User Position.
+% Downstream of production target Standard User Position
 
 \section{Progress against the plan}
 
-Qt debugger cannot use which means.
-
-%\begin{landscape} %in case a table becomes to big this rotates it, uncheck also \end{landscape} and lscape package in the preferences
-	\begin{table}
-		\caption[Substrate matrix 1]{\rule[-2mm]{0mm}{0mm}{Physical properties of the tested substrate samples}}
-		\begin{tabular}{@{}*{8}l@{}} \toprule \addlinespace[0.1em]
-
-      No.  &  Supplier  &  Material  &    Sample  &    Length  &  Identifier  &      Mass  &       Mass \\
-
-           &            &            &            &       /cm  &              &      Mass  & /g$^{a)}$ \\
-
-\cmidrule{1-8} % &            &            &            &            &            &            &            \\
-
-         1 &        SST &     Galaxy &  warp unit &         15 &   \color{red}ncc1701e &     1927.6 &     1920.2 \\
-
-         2 &        SST & Constellat. &  warp unit &       14.9 &   11016910 &    ---     &    ---     \\
-
-         3 &        SST &  Prototype &        ops &         15 &  302/09     &    107.766 &    107.771 \\
-
-         4 &    KEmpire &        BoP &  warp unit &       15.1 &     c836f5 &    129.711 &    129.711 \\
-
-         5 &    KEmpire &        BoP &        ops &       15.3 &     c836f6 &     131.65 &    139.656 \\
-
-         6 &    KEmpire &  AC Mullite   &    core    &        3.2 &     c836f7 &      9.896 &      9.889 \\
-
-         7 &    REmpire &  Proptotye &       body &      ---   &   \color{blue}DHC 1703 &    ---     &    ---     \\
-
-         8 &    REmpire &  Proptotye &       body & {\it 15.2} &   DHC 1704 &    ---     &    ---     \\
-
-		\bottomrule
-		\multicolumn{8}{l}{{\footnotesize$^{a)}$After heat test at 2000°K for 5~h}}\\		
-	\end{tabular}
-	\label{tab:matrix_1}
-	\end{table}
-%\end{landscape}
 
 
 \section{Achievements since last meeting}
 
-The results for the loss of weight are listed in table~\ref{tab:matrix_1} and in figure~\ref{fig:particle_size}.
+\subsection{Git}
+Git or ColudForge will be a good tool used as source manager to record and restore the project programming.
+%\subsubsection{}
 
-Mineral aerosol represents one of the largest mass fractions of the global aerosol. It consists of windblown soil and is produced mainly in the arid areas of our planet, in particular in the great deserts. Its annual production rate is estimated to be in the order of 200 to 5000 Tg. The smaller size fraction (< 20 $mu$m) may be transported over long distances  of up to 5000 km. Mineral aerosol has been considered a nonreactive, hydrophobic surface . Nevertheless, its impact on the atmospheric radiation budget and on the concentration of cloud condensation nuclei (CCN) have been discussed. Recently, its possible role as a surface for heterogeneous reactions has been taken into account. 
+\subsection{}
 
-\begin{figure}
-	\begin{center}
-		%\includegraphics[width=13cm]{particle_size.pdf}
-	\end{center}
-	\caption{Particle size distribution for three different sources.}
-	\label{fig:particle_size}
-\end{figure}
+%\subsubsection{}
 
-\subsection{Modeling Copy2}
-For example, in a recent modeling study Dentener et. al.  calculated that in large areas more than 40\% of the total atmospheric nitrate is associated with mineral aerosol. However, their results still suffer from large uncertainties in the heterogeneous reaction rates. There is also evidence from field measurements for a correlation of the aerosol nitrate content and the aerosol mineral fraction. A correlation between the nitrate mass size distribution and the mineral aerosol distribution has also been reported . 
-\subsubsection{Composition Copy2}
-Mineral aerosol has a complex chemical and mineralogical composition  in which aluminum in the chemical form of alumosilicates contributes 8 \% by mass. For the present investigation alumina has been chosen as model substance. It has a defined chemical composition and mainly because of its relevance as supporting material for catalysts its surface features have been investigated by infrared spectroscopy, and ab initio calculations. Also, the heterogeneous reactions of CFC's with alumina produced by solid-fuel rocket engines have been discussed with regard to stratospheric ozone depletion .
-
-Mineral aerosol represents one of the largest mass fractions of the global aerosol. It consists of windblown soil and is produced mainly in the arid areas of our planet, in particular in the great deserts. Its annual production rate is estimated to be in the order of 200 to 5000 Tg , , . The smaller size fraction (< 20 $mu$m) may be transported over long distances  of up to 5000 km. Mineral aerosol has been considered a nonreactive, hydrophobic surface . Nevertheless, its impact on the atmospheric radiation budget and on the concentration of cloud condensation nuclei (CCN) have been discussed. Recently, its possible role as a surface for heterogeneous reactions has been taken into account. 
-\subsection{Modeling Copy3}
-For example, in a recent modeling study Dentener et. al.  calculated that in large areas more than 40\% of the total atmospheric nitrate is associated with mineral aerosol. However, their results still suffer from large uncertainties in the heterogeneous reaction rates. There is also evidence from field measurements for a correlation of the aerosol nitrate content and the aerosol mineral fraction. A correlation between the nitrate mass size distribution and the mineral aerosol distribution has also been reported. 
-\subsubsection{Composition Cpoy3}
-Mineral aerosol has a complex chemical and mineralogical composition  in which aluminum in the chemical form of alumosilicates contributes 8 \% by mass. For the present investigation alumina has been chosen as model substance. It has a defined chemical composition and mainly because of its relevance as supporting material for catalysts its surface features have been investigated by infrared spectroscopy, and ab initio calculations. Also, the heterogeneous reactions of CFC's with alumina produced by solid-fuel rocket engines have been discussed with regard to stratospheric ozone depletion.
 
 \section{Difficulties encounted since last meeting}
 
-With the help from supervisor, more problems abound. The integrated development environment Qt being installed in downstairs cannot debug correctly so that it has to be checked on Wildcat on Cheetah. The debugger installed on Linux operating system which is new to me. It need to take some time to learn how to debug on Linux. According to suggestions, insight(GDB gui) and ddd(DataDisplay debugger) can be used on linux system. 
+More detectors have been attached, no records from the output files. In order to check the programming, Debugger on Qt creator would be used, but it fails to debug. 
+The debugger installed on Linux operating system which is new to me. It need to take some time to learn how to debug on WildCat for this project.  
 
-Except for these, any source manager has not used in my PhD project. That will be a problem. No records for my each modification. The program is unable to get back according to time. Git or ColudForge will be a good tool used as source manager to record and restore the project programming.
+Except for these, any source manager has not used in my PhD project. That will be a problem. No records for each modification. The program is unable to get back according to time. 
 
+The geometry of collimator seems not correct from visualization interface window. The hole does not penetrate the collimator.
 
 \section{Next steps}
 
@@ -238,7 +202,48 @@ Except for these, any source manager has not used in my PhD project. That will b
 
 \section{Revised plan}
 
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{unsrt}
+\bibliography{MMRef}
+
+%----------------------------------------------------------------------------------------
+
 \end{document}
 
+%\begin{landscape} %in case a table becomes to big this rotates it, uncheck also \end{landscape} and lscape package in the preferences
+%	\begin{table}
+%		\caption[Substrate matrix 1]{\rule[-2mm]{0mm}{0mm}{Physical properties of the tested substrate samples}}
+%		\begin{tabular}{@{}*{8}l@{}} \toprule \addlinespace[0.1em]
 
+%      No.  &  Supplier  &  Material  &    Sample  &    Length  &  Identifier  &      Mass  &       Mass \\
+
+%           &            &            &            &       /cm  &              &      Mass  & /g$^{a)}$ \\
+
+%\cmidrule{1-8} % &            &            &            &            &            &            &            \\
+
+%         1 &        SST &     Galaxy &  warp unit &         15 &   \color{red}ncc1701e &     1927.6 &     1920.2 \\
+
+%         2 &        SST & Constellat. &  warp unit &       14.9 &   11016910 &    ---     &    ---     \\
+
+%         3 &        SST &  Prototype &        ops &         15 &  302/09     &    107.766 &    107.771 \\
+
+%         4 &    KEmpire &        BoP &  warp unit &       15.1 &     c836f5 &    129.711 &    129.711 \\
+
+%         5 &    KEmpire &        BoP &        ops &       15.3 &     c836f6 &     131.65 &    139.656 \\
+
+%         6 &    KEmpire &  AC Mullite   &    core    &        3.2 &     c836f7 &      9.896 &      9.889 \\
+
+%         7 &    REmpire &  Proptotye &       body &      ---   &   \color{blue}DHC 1703 &    ---     &    ---     \\
+
+%         8 &    REmpire &  Proptotye &       body & {\it 15.2} &   DHC 1704 &    ---     &    ---     \\
+
+%		\bottomrule
+%		\multicolumn{8}{l}{{\footnotesize$^{a)}$After heat test at 2000°K for 5~h}}\\		
+%	\end{tabular}
+%	\label{tab:matrix_1}
+%	\end{table}
+%\end{landscape}
 

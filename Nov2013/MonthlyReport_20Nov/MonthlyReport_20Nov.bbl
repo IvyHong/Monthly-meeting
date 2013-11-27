@@ -1,0 +1,48 @@
+\begin{thebibliography}{1}
+
+\bibitem{5389432}
+J.F. Ziegler, H.~W. Curtis, H.P. Muhlfeld, C.J. Montrose, B.~Chin, M.~Nicewicz,
+  C.~A. Russell, W.~Y. Wang, L.~B. Freeman, P.~Hosier, L.~E. LaFave, J.L.
+  Walsh, J.~M. Orro, G.~J. Unger, J.~M. Ross, T.J. O'Gorman, B.~Messina, T.D.
+  Sullivan, A.~J. Sykes, H.~Yourke, T.~A. Enger, V.~Tolat, T.~S. Scott, A.~H.
+  Taber, R.~J. Sussman, W.~A. Klein, and C.~W. Wahaus.
+\newblock Ibm experiments in soft fails in computer electronics (1978-1994).
+\newblock {\em IBM Journal of Research and Development}, 40(1):3--18, 1996.
+
+\bibitem{5488795}
+S.P. Platt, A.V. Prokofiev, and X.X. Cai.
+\newblock Fidelity of energy spectra at neutron facilities for single-event
+  effects testing.
+\newblock In {\em Reliability Physics Symposium (IRPS), 2010 IEEE
+  International}, pages 411--416, 2010.
+
+\bibitem{5173383}
+A.V. Prokofiev, J.~Blomgren, S.P. Platt, R.~Nolte, S.~Rottger, and A.N.
+  Smirnov.
+\newblock Anita - a new neutron facility for accelerated see testing at the
+  svedberg laboratory.
+\newblock In {\em Reliability Physics Symposium, 2009 IEEE International},
+  pages 929--935, 2009.
+
+\bibitem{6131336}
+L.H. Zhang and S.P. Platt.
+\newblock Minimally invasive neutron beam monitoring for single-event effects
+  accelerated testing.
+\newblock In {\em Radiation and Its Effects on Components and Systems (RADECS),
+  2011 12th European Conference on}, pages 945--949, 2011.
+
+\bibitem{ZhangThesis}
+L.H. Zhang.
+\newblock {\em Neutron beam monitoring for single-event effects testing}.
+\newblock PhD thesis, School of Computing,Engineering and Physical Science;
+  University of Central Lancashire, 2012.
+
+\bibitem{5336295}
+A.V. Prokofiev, J.~Blomgren, M.~Majerle, R.~Nolte, S.~Rottger, S.P. Platt,
+  Cai~Xiao Xiao, and A.N. Smirnov.
+\newblock Characterization of the anita neutron source for accelerated see
+  testing at the svedberg laboratory.
+\newblock In {\em Radiation Effects Data Workshop, 2009 IEEE}, pages 166--173,
+  2009.
+
+\end{thebibliography}
